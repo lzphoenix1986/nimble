@@ -9,7 +9,7 @@ do
 done
 
 
-cd /root/.jenkins/workspace/Janna/
+cd /root/.jenkins/jobs/nimble/workspace
 echo "bower install -allow-root"
 bower install -allow-root
 
@@ -19,5 +19,5 @@ npm install
 echo "grunt build"
 grunt build
 
-echo "grunt serve:dist >> /root/.jenkins/workspace/Janna/jannaRun.log 2>&1 &"
-nohup grunt serve:dist >> /root/.jenkins/workspace/Janna/jannaRun.log 2>&1 &
+echo "grunt serve:dist >> /root/.jenkins/jobs/nimble/workspace/nimbleRun.log 2>&1 &"
+nohup grunt serve:dist >> /root/.jenkins/jobs/nimble/workspace/nimbleRun.log 2>&1 &
