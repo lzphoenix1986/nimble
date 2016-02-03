@@ -9,7 +9,7 @@ do
 done
 
 
-cd /data/jenkins/workspace/Janna/
+cd /root/.jenkins/workspace/Janna/
 echo "bower install -allow-root"
 bower install -allow-root
 
